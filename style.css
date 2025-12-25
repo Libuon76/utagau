@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  transition: background 1s;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 8vw;
+  margin-bottom: 10vh;
+}
+
+#question, #endMessage {
+  font-size: 5vw;
+  max-width: 90%;
+  margin: 5vh auto;
+  padding: 4vw;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.6);
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  transition: transform 0.2s, background 0.5s, opacity 1s;
+}
+
+/* ボタンを画面下に固定 */
+#buttons {
+  position: fixed;
+  bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 5vw;
+}
+
+button {
+  font-size: 4vw;
+  padding: 3vw 6vw;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #444, #666);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#menuBtn {
+  display: none;
+  background: linear-gradient(135deg, #990000, #cc0000);
+  position: fixed;
+  bottom: 2vh;
+}
+
+/* PC警告画面 */
+#pcWarning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+}
+
+#pcWarning button {
+  margin-top: 5vh;
+  font-size: 4vw;
+  padding: 3vw 6vw;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #444, #666);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
