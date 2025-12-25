@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>疑う - メインメニュー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PC警告画面 -->
+<div id="pcWarning" style="display:none; text-align:center; padding:20px;">
+  <h1>スマホで開いてください</h1>
+  <p>このゲームはスマホ専用です。</p>
+  <button id="backBtn">戻る</button>
+</div>
+
+<!-- メインメニュー -->
+<div id="menuScreen">
+  <h1>疑う</h1>
+  <button id="startBtn">ゲームを始める</button>
+  <button id="exitBtn">終了</button>
+</div>
+
+<!-- ゲーム画面 -->
+<div id="gameScreen" style="display:none;">
+  <div id="question">質問がここに表示されます</div>
+  <div id="buttons">
+      <button id="yesBtn">はい</button>
+      <button id="noBtn">いいえ</button>
+  </div>
+  <div id="endMessage"></div>
+  <button id="menuBtn">メインメニューに戻る</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
